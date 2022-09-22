@@ -2,14 +2,12 @@
 if __name__ == "__main__":
     import sys
     size = len(sys.argv)
-    n = len(sys.argv) - 1
-
-    if (n == 0):
-        print("{:d} arguments.".format(n))
-    elif (n == 1):
-        print("{:d} argument:".format(n))
+    i = len(sys.argv) - 1
+    if (i == 0):
+        print("{:d} arguments.".format(i))
+    elif (i == 1):
+        print("{:d} argument:".format(i))
     else:
-        print("{:d} arguments:".format(n))
-    
-    for n in range(1, size):
-        print("{:d}: {}".format(n, sys.argv[n]))
+        print("{:d} arguments:".format(i))
+    for i in range(1, size):
+        print("{:d}: {}".format(i, sys.argv[i]))
